@@ -51,7 +51,7 @@ public class LibraryModel {
 
             PreparedStatement ps = this.conn.prepareStatement("" +
                     "SELECT isbn, title, edition_no, numofcop, numleft, " +
-                    "   surname || ', ' || name as ful_name " +
+                    "   surname || ', ' || author.name AS full_name " +
                     "FROM book NATURAL JOIN book_author " +
                     "NATURAL JOIN author " +
                     "WHERE isbn = ?");
@@ -77,7 +77,7 @@ public class LibraryModel {
         }catch (Exception e) {
             return this.ERROR_RETRV_RECORD;
         }
-        return "No Collection of book contianing: " + isbn;
+        return error_BookNotFound(isbn);
     }
 
     public String showCatalogue() {
@@ -85,7 +85,7 @@ public class LibraryModel {
         try {
             PreparedStatement ps = this.conn.prepareStatement("" +
                     "SELECT isbn, title, edition_no, numofcop, numleft, " +
-                    "   surname || ', ' name as full_name " +
+                    "   surname || ', ' || author.name AS full_name " +
                     "FROM book " +
                     "NATURAL JOIN book_author " +
                     "NATURAL JOIN author");
@@ -120,7 +120,7 @@ public class LibraryModel {
         try {
             PreparedStatement ps = this.conn.prepareStatement("" +
                     "SELECT isbn, title, edition_no, numofcop, numleft, surname || ', ' || name AS author, " +
-                    "       customerid, l_name || ' ' || f_name AS full_name " +
+                    "       customerid, l_name || ', ' || f_name AS full_name " +
                     "FROM book NATURAL JOIN book_author " +
                     "NATURAL JOIN author " +
                     "NATURAL JOIN cust_book " +
@@ -237,7 +237,7 @@ public class LibraryModel {
 
     /***********************
      *** CUSTOMER STUB *****
-     * *********************/
+     ***********************/
 
     public String showCustomer(int customerID) {
         String error = "Cannot find customer with given id: " + customerID;
@@ -282,11 +282,11 @@ public class LibraryModel {
             else
                 cust += "\tNo Books Borrowed";
 
+            return cust;
+
         } catch (SQLException e) {
             return ERROR_RETRV_RECORD;
         }
-
-	    return cust;
     }
 
     public String showAllCustomers() {
@@ -320,23 +320,34 @@ public class LibraryModel {
      *** BORROW-BOOK STUB **
      ***********************/
 
-    public String borrowBook(int isbn, int customerID,
-			     int day, int month, int year) {
+    public String borrowBook(int isbn, int customerID, int day, int month, int year) {
+
+        String error_BookIsLoaned = String.format("The book %d is already loaned by customer %d\n", isbn, customerID);
 
         try {
+            // validate isbn
+            if (!validateIsbn(isbn))
+                return (error_BookNotFound(isbn));
+
+            // validate customer
+            if (!validateCustomer(customerID))
+                return (error_CustomerNotFound(customerID));
+
+            // check if book is not loaned
+            if (validateLoanedBook(isbn, customerID))
+                return (error_BookIsLoaned);
+
              return borrowBookMethod(isbn, customerID, day, month+1, year);
         } catch (SQLException e) {
             return e.getMessage();
         }
     }
 
-    private String borrowBookMethod(int isbn, int customerID,
-                              int day, int month, int year) throws SQLException {
+    private String borrowBookMethod(int isbn, int customerID, int day, int month, int year) throws SQLException {
 
         this.conn.setAutoCommit(false);
 
         String error_invalidDate = String.format("The date %d/%d/%d is invalid\n", day, month, year);
-        String error_BookIsLoaned = String.format("The book %d is already loaned by customer %d\n", isbn, customerID);
 
         // Queries
         String insertBook = "INSERT INTO " +
@@ -347,7 +358,7 @@ public class LibraryModel {
                 "NATURAL JOIN customer " +
                 "WHERE isbn = ? AND customerid = ?";
 
-        String bookQuery = "SELECT * FROM book WHERE isbn = ?";
+        String bookQuery = "SELECT * FROM book WHERE isbn = ? FOR UPDATE"; // lock the book
 
         PreparedStatement loanBook = null;
         PreparedStatement updateCopies = null;
@@ -366,25 +377,14 @@ public class LibraryModel {
 
         try {
 
-            // validate isbn
-            if (!validateIsbn(isbn))
-                throw new SQLException(error_BookNotFound(isbn));
-
-            // validate customer
-            if (!validateCustomer(customerID))
-                throw new SQLException(error_CustomerNotFound(customerID));
-
-            // check if book is not loaned
-            if (validateLoanedBook(isbn, customerID))
-                throw new SQLException(error_BookIsLoaned);
-
             // Validate copies
             bookTable = this.conn.prepareStatement(bookQuery);
             bookTable.setInt(1, isbn);
             bookTableResult = bookTable.executeQuery();
 
+            int copies = 0;
             if (bookTableResult.next()) {
-                int copies = bookTableResult.getInt("numofcop");
+                copies = bookTableResult.getInt("numofcop");
                 if (copies <= 0)
                     throw new SQLException(error_BookOnLoan(isbn));
             } else
@@ -398,7 +398,7 @@ public class LibraryModel {
             loanBook.executeUpdate();
 
             // update the book count
-            updateBookCount(updateCopies, -1, isbn);
+           updateBookCount(bookTable, -1, isbn);
 
             // Display the results to the user
             getDetails = this.conn.prepareStatement(results);
@@ -492,17 +492,112 @@ public class LibraryModel {
             this.conn.setAutoCommit(true);
         }
     }
+
+    /***********************
+     *** DELETE STUB *******
+     ***********************/
     
     public String deleteCus(int customerID) {
-    	return "Delete Customer";
+    	 try {
+    	     // validate customer
+             if (!validateCustomer(customerID))
+                 return error_CustomerNotFound(customerID);
+
+             // Now we are a valid customer
+             return removeCustomer(customerID);
+         } catch (SQLException e){
+    	    return e.getMessage();
+         }
+    }
+
+    private String removeCustomer(int customerID) throws SQLException {
+
+        Savepoint save1 = this.conn.setSavepoint();
+        this.conn.setAutoCommit(false);
+
+        PreparedStatement ps = null;
+
+        try {
+
+            // should check for dependencies first
+
+            // try removing the customer
+            String deleteCustQuery = "DELETE FROM customer WHERE customerid = ?";
+            ps = this.conn.prepareStatement(deleteCustQuery);
+            ps.setInt(1, customerID);
+            ps.executeUpdate();
+
+            this.conn.commit();
+            return String.format("Removed customer %d");
+
+        } catch (SQLException e) {
+            this.conn.rollback(save1);
+            throw e;
+        } finally {
+            if (ps != null) ps.close();
+            this.conn.setAutoCommit(true);
+        }
     }
     
     public String deleteAuthor(int authorID) {
-    	return "Delete Author";
+
+        try {
+
+            // check author exists
+            if (!validateAuthor(authorID))
+                return error_AuthorNotFound(authorID);
+
+            // remove the author
+            return removeAuthor(authorID);
+
+        } catch (SQLException e) {
+            return e.getMessage();
+        }
+    }
+
+    private String removeAuthor(int authorID) throws SQLException {
+
+        // dependencies...
+        this.conn.setAutoCommit(false);
+        Savepoint save1 = this.conn.setSavepoint();
+
+        String query = "DELETE FROM author WHERE authorid = " + authorID;
+        PreparedStatement ps = null;
+
+        try {
+
+            ps = this.conn.prepareStatement(query);
+            ps.executeUpdate();
+
+        } catch (SQLException e) {
+            this.conn.rollback(save1);
+            throw e;
+
+        } finally {
+            this.conn.setAutoCommit(true);
+            if (ps != null) ps.close();
+        }
+        return "";
     }
     
     public String deleteBook(int isbn) {
-    	return "Delete Book";
+
+        try {
+            // check isbn
+            if (!validateIsbn(isbn))
+                return error_BookNotFound(isbn);
+
+            // remove the book
+            return removeBook(isbn);
+
+        } catch (SQLException e){
+            return e.getMessage();
+        }
+    }
+
+    private String removeBook(int isbn){
+
+        return "";
     }
 
     /***********************
@@ -524,7 +619,7 @@ public class LibraryModel {
     /**
      * Helper Method: Either gets a customer or all customers
      * @param ps -  The prepared statement to execute
-     * @return
+     * @return An arraylist object containing the data of the specified query
      * @throws SQLException
      */
     private List<Object> getCustomer(PreparedStatement ps) throws SQLException {
@@ -552,6 +647,14 @@ public class LibraryModel {
         return String.format("\t\t%d - %s\n", isbn, title);
     }
 
+    /**
+     * HELPER METHOD - Updates the numLeft column in the table book. Either by adding 1 or subtracting 1
+     *
+     * @param updateCopies
+     * @param count
+     * @param isbn
+     * @throws SQLException
+     */
     private void updateBookCount(PreparedStatement updateCopies, int count, int isbn) throws SQLException {
         String updateBookCount = "UPDATE book " +
                 "SET numleft =  book.numleft + ? WHERE book.isbn = ?";
@@ -640,10 +743,19 @@ public class LibraryModel {
 
         return hasItem(ps, rs);
     }
+    private boolean validateAuthor(int authorid) throws SQLException {
+        String query = "SELECT * FROM author WHERE authorid = ?";
+        PreparedStatement ps = this.conn.prepareStatement(query);
+        ps.setInt(1, authorid);
+        ResultSet rs = ps.executeQuery();
+
+        return hasItem(ps, rs);
+    }
 
     // ERROR REPORT METHODS
     private String error_BookOnLoan(int isbn) { return String.format("Not enough copies of %d left\n", isbn); }
     private String error_BookNotFound(int isbn) { return String.format("Book with given isbn: %d not found!\n", isbn); }
     private String error_CustomerNotFound(int customerID) { return String.format("The customer %d was not found\n", customerID); }
+    private String error_AuthorNotFound(int authorid) { return String.format("The author %d was not found\n", authorid); }
 
 }

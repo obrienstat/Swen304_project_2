@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fd0b769-7cb2-4412-a454-45e506094f4b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/project2/LibraryModel.class" afterPath="$PROJECT_DIR$/out/production/project2/LibraryModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LibraryModel.java" afterPath="$PROJECT_DIR$/src/LibraryModel.java" />
     </list>
@@ -18,56 +19,78 @@
       <file leaf-file-name="LibraryModel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LibraryModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="99" column="55" lean-forward="false" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
+            <state relative-caret-position="-878">
+              <caret line="400" column="36" lean-forward="false" selection-start-line="400" selection-start-column="36" selection-end-line="400" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#LibraryModel#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#bookLookup#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#showCatalogue#0;class#LibraryModel#0" expanded="false" />
                 <element signature="method#showLoanedBooks#0;class#LibraryModel#0" expanded="false" />
                 <element signature="method#showAuthor#0;class#LibraryModel#0" expanded="false" />
                 <element signature="method#showAllAuthors#0;class#LibraryModel#0" expanded="false" />
                 <element signature="method#showCustomer#0;class#LibraryModel#0" expanded="false" />
                 <element signature="method#showAllCustomers#0;class#LibraryModel#0" expanded="false" />
-                <element signature="method#borrowBookMethod#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#returnBook#0;class#LibraryModel#0" expanded="false" />
                 <element signature="method#returnBookMethod#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#deleteCus#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#removeCustomer#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#closeDBConnection#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#getCustomer#0;class#LibraryModel#0" expanded="false" />
                 <element signature="method#closeStatements#0;class#LibraryModel#0" expanded="false" />
                 <element signature="method#validateDate#0;class#LibraryModel#0" expanded="false" />
                 <element signature="method#hasItem#0;class#LibraryModel#0" expanded="false" />
                 <element signature="method#validateIsbn#0;class#LibraryModel#0" expanded="false" />
                 <element signature="method#validateCustomer#0;class#LibraryModel#0" expanded="false" />
-                <marker date="1508410995000" expanded="true" signature="1399:1683" ph="SELECT isbn,... book" />
-                <marker date="1508410995000" expanded="true" signature="1430:1683" ph="select isbn,... book" />
-                <marker date="1508410995000" expanded="true" signature="1762:1763" ph="SELECT * FRO... book" />
-                <marker date="1508410995000" expanded="true" signature="2764:3031" ph="SELECT isbn,... book" />
-                <marker date="1508410995000" expanded="true" signature="2764:3032" ph="SELECT isbn,... book" />
-                <marker date="1508410995000" expanded="true" signature="4095:4391" ph="SELECT isbn,... book" />
-                <marker date="1508410995000" expanded="true" signature="4095:4439" ph="SELECT isbn,... book" />
-                <marker date="1508410995000" expanded="true" signature="4095:4486" ph="SELECT isbn,... book" />
-                <marker date="1508410995000" expanded="true" signature="5852:6122" ph="SELECT autho... author" />
-                <marker date="1508410995000" expanded="true" signature="5877:6121" ph="select autho... author" />
-                <marker date="1508410995000" expanded="true" signature="5877:6122" ph="SELECT autho... author" />
-                <marker date="1508410995000" expanded="true" signature="5883:6121" ph="select autho... author" />
-                <marker date="1508410995000" expanded="true" signature="7498:7576" ph="SELECT autho... " />
-                <marker date="1508410995000" expanded="true" signature="7498:7613" ph="SELECT autho... author" />
-                <marker date="1508410995000" expanded="true" signature="8767:8960" ph="SELECT custo... customer" />
-                <marker date="1508410995000" expanded="true" signature="9354:9409" ph="SELECT isbn,... book" />
-                <marker date="1508410995000" expanded="true" signature="9354:9444" ph="SELECT isbn,... book" />
-                <marker date="1508410995000" expanded="true" signature="9354:9492" ph="SELECT isbn,... book" />
-                <marker date="1508410995000" expanded="true" signature="9354:9538" ph="SELECT custo... book" />
-                <marker date="1508410995000" expanded="true" signature="10346:10539" ph="SELECT custo... customer" />
-                <marker date="1508410995000" expanded="true" signature="11877:11967" ph="INSERT INTO cust_book" />
-                <marker date="1508410995000" expanded="true" signature="11997:12020" ph="SELECT title... " />
-                <marker date="1508410995000" expanded="true" signature="11997:12199" ph="SELECT title... cust_book" />
-                <marker date="1508410995000" expanded="true" signature="12231:12264" ph="SELECT * FRO... book" />
-                <marker date="1508410995000" expanded="true" signature="15957:16012" ph="DELETE FROM " />
-                <marker date="1508410995000" expanded="true" signature="19164:19248" ph="UPDATE book " />
-                <marker date="1508410995000" expanded="true" signature="21243:21295" ph="SELECT * FRO... book" />
-                <marker date="1508410995000" expanded="true" signature="21243:21296" ph="SELECT * FRO... book" />
-                <marker date="1508410995000" expanded="true" signature="21522:21584" ph="SELECT * FRO... customer" />
-                <marker date="1508410995000" expanded="true" signature="21522:21585" ph="SELECT * FRO... customer" />
-                <marker date="1508410995000" expanded="true" signature="21829:21873" ph="SELECT * FRO... cust_book" />
-                <marker date="1508410995000" expanded="true" signature="21829:21928" ph="SELECT * FRO... cust_book" />
+                <element signature="method#validateLoanedBook#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#validateAuthor#0;class#LibraryModel#0" expanded="false" />
+                <marker date="1508418319000" expanded="true" signature="1399:1691" ph="SELECT isbn,... book" />
+                <marker date="1508418319000" expanded="true" signature="1430:1691" ph="select isbn,... book" />
+                <marker date="1508418319000" expanded="true" signature="1770:1771" ph="SELECT * FRO... book" />
+                <marker date="1508418319000" expanded="true" signature="2753:3030" ph="SELECT isbn,... book" />
+                <marker date="1508418319000" expanded="true" signature="2753:3031" ph="SELECT isbn,... book" />
+                <marker date="1508418319000" expanded="true" signature="4094:4391" ph="SELECT isbn,... book" />
+                <marker date="1508418319000" expanded="true" signature="4094:4439" ph="SELECT isbn,... book" />
+                <marker date="1508418319000" expanded="true" signature="4094:4486" ph="SELECT isbn,... book" />
+                <marker date="1508418319000" expanded="true" signature="5852:6122" ph="SELECT autho... author" />
+                <marker date="1508418319000" expanded="true" signature="5877:6121" ph="select autho... author" />
+                <marker date="1508418319000" expanded="true" signature="5877:6122" ph="SELECT autho... author" />
+                <marker date="1508418319000" expanded="true" signature="5883:6121" ph="select autho... author" />
+                <marker date="1508418319000" expanded="true" signature="7498:7576" ph="SELECT autho... " />
+                <marker date="1508418319000" expanded="true" signature="7498:7613" ph="SELECT autho... author" />
+                <marker date="1508418319000" expanded="true" signature="8767:8960" ph="SELECT custo... customer" />
+                <marker date="1508418319000" expanded="true" signature="9354:9409" ph="SELECT isbn,... book" />
+                <marker date="1508418319000" expanded="true" signature="9354:9444" ph="SELECT isbn,... book" />
+                <marker date="1508418319000" expanded="true" signature="9354:9492" ph="SELECT isbn,... book" />
+                <marker date="1508418319000" expanded="true" signature="9354:9538" ph="SELECT custo... book" />
+                <marker date="1508418319000" expanded="true" signature="10353:10546" ph="SELECT custo... customer" />
+                <marker date="1508418319000" expanded="true" signature="12250:12340" ph="INSERT INTO cust_book" />
+                <marker date="1508418319000" expanded="true" signature="12370:12393" ph="SELECT title... " />
+                <marker date="1508418319000" expanded="true" signature="12370:12572" ph="SELECT title... cust_book" />
+                <marker date="1508418319000" expanded="true" signature="12604:12637" ph="SELECT * FRO... book" />
+                <marker date="1508418319000" expanded="true" signature="12604:12648" ph="SELECT * FRO... book" />
+                <marker date="1508418319000" expanded="true" signature="15930:15985" ph="DELETE FROM " />
+                <marker date="1508418319000" expanded="true" signature="18296:18337" ph="DELETE FROM " />
+                <marker date="1508418319000" expanded="true" signature="19356:19392" ph="DELETE FROM " />
+                <marker date="1508418319000" expanded="true" signature="21865:21949" ph="UPDATE book " />
+                <marker date="1508418319000" expanded="true" signature="23944:23996" ph="SELECT * FRO... book" />
+                <marker date="1508418319000" expanded="true" signature="23944:23997" ph="SELECT * FRO... book" />
+                <marker date="1508418319000" expanded="true" signature="24223:24285" ph="SELECT * FRO... customer" />
+                <marker date="1508418319000" expanded="true" signature="24223:24286" ph="SELECT * FRO... customer" />
+                <marker date="1508418319000" expanded="true" signature="24530:24574" ph="SELECT * FRO... cust_book" />
+                <marker date="1508418319000" expanded="true" signature="24530:24629" ph="SELECT * FRO... cust_book" />
+                <marker date="1508418319000" expanded="true" signature="24871:24910" ph="SELECT * FRO... author" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultSet.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1072">
+              <caret line="1418" column="8" lean-forward="false" selection-start-line="1418" selection-start-column="8" selection-end-line="1418" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,9 +108,11 @@
       <file leaf-file-name="LibraryUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LibraryUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="270" column="12" lean-forward="false" selection-start-line="270" selection-start-column="4" selection-end-line="270" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="124">
+              <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+              <folding>
+                <element signature="e#16117#16118#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -604,7 +629,7 @@
       <updated>1508197317330</updated>
       <workItem from="1508197321181" duration="17441000" />
       <workItem from="1508370454303" duration="214000" />
-      <workItem from="1508370745740" duration="22610000" />
+      <workItem from="1508370745740" duration="27083000" />
     </task>
     <task id="LOCAL-00001" summary="added more functionality with different stubs">
       <created>1508404192456</created>
@@ -620,11 +645,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508408661642</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changed select statements to suit authors full name">
+      <created>1508411014468</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1508411014468</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40265000" />
+    <option name="totallyTimeSpent" value="44738000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -670,11 +702,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added more functionality with different stubs" />
     <MESSAGE value="completed return book stub" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed return book stub" />
+    <MESSAGE value="changed select statements to suit authors full name" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed select statements to suit authors full name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LibraryModel.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -690,50 +731,62 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#LibraryModel#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#bookLookup#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showCatalogue#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showLoanedBooks#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showAuthor#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showAllAuthors#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showCustomer#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showAllCustomers#0;class#LibraryModel#0" expanded="false" />
-            <element signature="method#borrowBookMethod#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#returnBook#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#returnBookMethod#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#deleteCus#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#removeCustomer#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#closeDBConnection#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#getCustomer#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#closeStatements#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#validateDate#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#hasItem#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#validateIsbn#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#validateCustomer#0;class#LibraryModel#0" expanded="false" />
-            <marker date="1508410995000" expanded="true" signature="1399:1683" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="1430:1683" ph="select isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="1762:1763" ph="SELECT * FRO... book" />
-            <marker date="1508410995000" expanded="true" signature="2764:3031" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="2764:3032" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="4095:4391" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="4095:4439" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="4095:4486" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="5852:6122" ph="SELECT autho... author" />
-            <marker date="1508410995000" expanded="true" signature="5877:6121" ph="select autho... author" />
-            <marker date="1508410995000" expanded="true" signature="5877:6122" ph="SELECT autho... author" />
-            <marker date="1508410995000" expanded="true" signature="5883:6121" ph="select autho... author" />
-            <marker date="1508410995000" expanded="true" signature="7498:7576" ph="SELECT autho... " />
-            <marker date="1508410995000" expanded="true" signature="7498:7613" ph="SELECT autho... author" />
-            <marker date="1508410995000" expanded="true" signature="8767:8960" ph="SELECT custo... customer" />
-            <marker date="1508410995000" expanded="true" signature="9354:9409" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="9354:9444" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="9354:9492" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="9354:9538" ph="SELECT custo... book" />
-            <marker date="1508410995000" expanded="true" signature="10346:10539" ph="SELECT custo... customer" />
-            <marker date="1508410995000" expanded="true" signature="11877:11967" ph="INSERT INTO cust_book" />
-            <marker date="1508410995000" expanded="true" signature="11997:12020" ph="SELECT title... " />
-            <marker date="1508410995000" expanded="true" signature="11997:12199" ph="SELECT title... cust_book" />
-            <marker date="1508410995000" expanded="true" signature="12231:12264" ph="SELECT * FRO... book" />
-            <marker date="1508410995000" expanded="true" signature="15957:16012" ph="DELETE FROM " />
-            <marker date="1508410995000" expanded="true" signature="19164:19248" ph="UPDATE book " />
-            <marker date="1508410995000" expanded="true" signature="21243:21295" ph="SELECT * FRO... book" />
-            <marker date="1508410995000" expanded="true" signature="21243:21296" ph="SELECT * FRO... book" />
-            <marker date="1508410995000" expanded="true" signature="21522:21584" ph="SELECT * FRO... customer" />
-            <marker date="1508410995000" expanded="true" signature="21522:21585" ph="SELECT * FRO... customer" />
-            <marker date="1508410995000" expanded="true" signature="21829:21873" ph="SELECT * FRO... cust_book" />
-            <marker date="1508410995000" expanded="true" signature="21829:21928" ph="SELECT * FRO... cust_book" />
+            <element signature="method#validateLoanedBook#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#validateAuthor#0;class#LibraryModel#0" expanded="false" />
+            <marker date="1508418319000" expanded="true" signature="1399:1691" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="1430:1691" ph="select isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="1770:1771" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="2753:3030" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="2753:3031" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="4094:4391" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="4094:4439" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="4094:4486" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="5852:6122" ph="SELECT autho... author" />
+            <marker date="1508418319000" expanded="true" signature="5877:6121" ph="select autho... author" />
+            <marker date="1508418319000" expanded="true" signature="5877:6122" ph="SELECT autho... author" />
+            <marker date="1508418319000" expanded="true" signature="5883:6121" ph="select autho... author" />
+            <marker date="1508418319000" expanded="true" signature="7498:7576" ph="SELECT autho... " />
+            <marker date="1508418319000" expanded="true" signature="7498:7613" ph="SELECT autho... author" />
+            <marker date="1508418319000" expanded="true" signature="8767:8960" ph="SELECT custo... customer" />
+            <marker date="1508418319000" expanded="true" signature="9354:9409" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="9354:9444" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="9354:9492" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="9354:9538" ph="SELECT custo... book" />
+            <marker date="1508418319000" expanded="true" signature="10353:10546" ph="SELECT custo... customer" />
+            <marker date="1508418319000" expanded="true" signature="12250:12340" ph="INSERT INTO cust_book" />
+            <marker date="1508418319000" expanded="true" signature="12370:12393" ph="SELECT title... " />
+            <marker date="1508418319000" expanded="true" signature="12370:12572" ph="SELECT title... cust_book" />
+            <marker date="1508418319000" expanded="true" signature="12604:12637" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="12604:12648" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="15930:15985" ph="DELETE FROM " />
+            <marker date="1508418319000" expanded="true" signature="18296:18337" ph="DELETE FROM " />
+            <marker date="1508418319000" expanded="true" signature="19356:19392" ph="DELETE FROM " />
+            <marker date="1508418319000" expanded="true" signature="21865:21949" ph="UPDATE book " />
+            <marker date="1508418319000" expanded="true" signature="23944:23996" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="23944:23997" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="24223:24285" ph="SELECT * FRO... customer" />
+            <marker date="1508418319000" expanded="true" signature="24223:24286" ph="SELECT * FRO... customer" />
+            <marker date="1508418319000" expanded="true" signature="24530:24574" ph="SELECT * FRO... cust_book" />
+            <marker date="1508418319000" expanded="true" signature="24530:24629" ph="SELECT * FRO... cust_book" />
+            <marker date="1508418319000" expanded="true" signature="24871:24910" ph="SELECT * FRO... author" />
           </folding>
         </state>
       </provider>
@@ -742,7 +795,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6000">
           <caret line="400" column="0" lean-forward="false" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#16117#16118#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -753,50 +808,62 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#LibraryModel#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#bookLookup#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showCatalogue#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showLoanedBooks#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showAuthor#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showAllAuthors#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showCustomer#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showAllCustomers#0;class#LibraryModel#0" expanded="false" />
-            <element signature="method#borrowBookMethod#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#returnBook#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#returnBookMethod#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#deleteCus#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#removeCustomer#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#closeDBConnection#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#getCustomer#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#closeStatements#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#validateDate#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#hasItem#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#validateIsbn#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#validateCustomer#0;class#LibraryModel#0" expanded="false" />
-            <marker date="1508410995000" expanded="true" signature="1399:1683" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="1430:1683" ph="select isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="1762:1763" ph="SELECT * FRO... book" />
-            <marker date="1508410995000" expanded="true" signature="2764:3031" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="2764:3032" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="4095:4391" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="4095:4439" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="4095:4486" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="5852:6122" ph="SELECT autho... author" />
-            <marker date="1508410995000" expanded="true" signature="5877:6121" ph="select autho... author" />
-            <marker date="1508410995000" expanded="true" signature="5877:6122" ph="SELECT autho... author" />
-            <marker date="1508410995000" expanded="true" signature="5883:6121" ph="select autho... author" />
-            <marker date="1508410995000" expanded="true" signature="7498:7576" ph="SELECT autho... " />
-            <marker date="1508410995000" expanded="true" signature="7498:7613" ph="SELECT autho... author" />
-            <marker date="1508410995000" expanded="true" signature="8767:8960" ph="SELECT custo... customer" />
-            <marker date="1508410995000" expanded="true" signature="9354:9409" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="9354:9444" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="9354:9492" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="9354:9538" ph="SELECT custo... book" />
-            <marker date="1508410995000" expanded="true" signature="10346:10539" ph="SELECT custo... customer" />
-            <marker date="1508410995000" expanded="true" signature="11877:11967" ph="INSERT INTO cust_book" />
-            <marker date="1508410995000" expanded="true" signature="11997:12020" ph="SELECT title... " />
-            <marker date="1508410995000" expanded="true" signature="11997:12199" ph="SELECT title... cust_book" />
-            <marker date="1508410995000" expanded="true" signature="12231:12264" ph="SELECT * FRO... book" />
-            <marker date="1508410995000" expanded="true" signature="15957:16012" ph="DELETE FROM " />
-            <marker date="1508410995000" expanded="true" signature="19164:19248" ph="UPDATE book " />
-            <marker date="1508410995000" expanded="true" signature="21243:21295" ph="SELECT * FRO... book" />
-            <marker date="1508410995000" expanded="true" signature="21243:21296" ph="SELECT * FRO... book" />
-            <marker date="1508410995000" expanded="true" signature="21522:21584" ph="SELECT * FRO... customer" />
-            <marker date="1508410995000" expanded="true" signature="21522:21585" ph="SELECT * FRO... customer" />
-            <marker date="1508410995000" expanded="true" signature="21829:21873" ph="SELECT * FRO... cust_book" />
-            <marker date="1508410995000" expanded="true" signature="21829:21928" ph="SELECT * FRO... cust_book" />
+            <element signature="method#validateLoanedBook#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#validateAuthor#0;class#LibraryModel#0" expanded="false" />
+            <marker date="1508418319000" expanded="true" signature="1399:1691" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="1430:1691" ph="select isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="1770:1771" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="2753:3030" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="2753:3031" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="4094:4391" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="4094:4439" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="4094:4486" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="5852:6122" ph="SELECT autho... author" />
+            <marker date="1508418319000" expanded="true" signature="5877:6121" ph="select autho... author" />
+            <marker date="1508418319000" expanded="true" signature="5877:6122" ph="SELECT autho... author" />
+            <marker date="1508418319000" expanded="true" signature="5883:6121" ph="select autho... author" />
+            <marker date="1508418319000" expanded="true" signature="7498:7576" ph="SELECT autho... " />
+            <marker date="1508418319000" expanded="true" signature="7498:7613" ph="SELECT autho... author" />
+            <marker date="1508418319000" expanded="true" signature="8767:8960" ph="SELECT custo... customer" />
+            <marker date="1508418319000" expanded="true" signature="9354:9409" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="9354:9444" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="9354:9492" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="9354:9538" ph="SELECT custo... book" />
+            <marker date="1508418319000" expanded="true" signature="10353:10546" ph="SELECT custo... customer" />
+            <marker date="1508418319000" expanded="true" signature="12250:12340" ph="INSERT INTO cust_book" />
+            <marker date="1508418319000" expanded="true" signature="12370:12393" ph="SELECT title... " />
+            <marker date="1508418319000" expanded="true" signature="12370:12572" ph="SELECT title... cust_book" />
+            <marker date="1508418319000" expanded="true" signature="12604:12637" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="12604:12648" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="15930:15985" ph="DELETE FROM " />
+            <marker date="1508418319000" expanded="true" signature="18296:18337" ph="DELETE FROM " />
+            <marker date="1508418319000" expanded="true" signature="19356:19392" ph="DELETE FROM " />
+            <marker date="1508418319000" expanded="true" signature="21865:21949" ph="UPDATE book " />
+            <marker date="1508418319000" expanded="true" signature="23944:23996" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="23944:23997" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="24223:24285" ph="SELECT * FRO... customer" />
+            <marker date="1508418319000" expanded="true" signature="24223:24286" ph="SELECT * FRO... customer" />
+            <marker date="1508418319000" expanded="true" signature="24530:24574" ph="SELECT * FRO... cust_book" />
+            <marker date="1508418319000" expanded="true" signature="24530:24629" ph="SELECT * FRO... cust_book" />
+            <marker date="1508418319000" expanded="true" signature="24871:24910" ph="SELECT * FRO... author" />
           </folding>
         </state>
       </provider>
@@ -805,15 +872,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6000">
           <caret line="400" column="0" lean-forward="false" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="587" column="8" lean-forward="false" selection-start-line="587" selection-start-column="8" selection-end-line="587" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="e#16117#16118#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -839,14 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LibraryUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="270" column="12" lean-forward="false" selection-start-line="270" selection-start-column="4" selection-end-line="270" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/postgresql94.jar!/org/postgresql/jdbc2/AbstractJdbc2ResultSet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -863,57 +916,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LibraryUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="513" column="0" lean-forward="false" selection-start-line="513" selection-start-column="0" selection-end-line="513" selection-end-column="0" />
+          <folding>
+            <element signature="e#16117#16118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1072">
+          <caret line="1418" column="8" lean-forward="false" selection-start-line="1418" selection-start-column="8" selection-end-line="1418" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/LibraryModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="99" column="55" lean-forward="false" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
+        <state relative-caret-position="-878">
+          <caret line="400" column="36" lean-forward="false" selection-start-line="400" selection-start-column="36" selection-end-line="400" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#LibraryModel#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#bookLookup#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showCatalogue#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showLoanedBooks#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showAuthor#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showAllAuthors#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showCustomer#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#showAllCustomers#0;class#LibraryModel#0" expanded="false" />
-            <element signature="method#borrowBookMethod#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#returnBook#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#returnBookMethod#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#deleteCus#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#removeCustomer#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#closeDBConnection#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#getCustomer#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#closeStatements#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#validateDate#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#hasItem#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#validateIsbn#0;class#LibraryModel#0" expanded="false" />
             <element signature="method#validateCustomer#0;class#LibraryModel#0" expanded="false" />
-            <marker date="1508410995000" expanded="true" signature="1399:1683" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="1430:1683" ph="select isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="1762:1763" ph="SELECT * FRO... book" />
-            <marker date="1508410995000" expanded="true" signature="2764:3031" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="2764:3032" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="4095:4391" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="4095:4439" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="4095:4486" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="5852:6122" ph="SELECT autho... author" />
-            <marker date="1508410995000" expanded="true" signature="5877:6121" ph="select autho... author" />
-            <marker date="1508410995000" expanded="true" signature="5877:6122" ph="SELECT autho... author" />
-            <marker date="1508410995000" expanded="true" signature="5883:6121" ph="select autho... author" />
-            <marker date="1508410995000" expanded="true" signature="7498:7576" ph="SELECT autho... " />
-            <marker date="1508410995000" expanded="true" signature="7498:7613" ph="SELECT autho... author" />
-            <marker date="1508410995000" expanded="true" signature="8767:8960" ph="SELECT custo... customer" />
-            <marker date="1508410995000" expanded="true" signature="9354:9409" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="9354:9444" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="9354:9492" ph="SELECT isbn,... book" />
-            <marker date="1508410995000" expanded="true" signature="9354:9538" ph="SELECT custo... book" />
-            <marker date="1508410995000" expanded="true" signature="10346:10539" ph="SELECT custo... customer" />
-            <marker date="1508410995000" expanded="true" signature="11877:11967" ph="INSERT INTO cust_book" />
-            <marker date="1508410995000" expanded="true" signature="11997:12020" ph="SELECT title... " />
-            <marker date="1508410995000" expanded="true" signature="11997:12199" ph="SELECT title... cust_book" />
-            <marker date="1508410995000" expanded="true" signature="12231:12264" ph="SELECT * FRO... book" />
-            <marker date="1508410995000" expanded="true" signature="15957:16012" ph="DELETE FROM " />
-            <marker date="1508410995000" expanded="true" signature="19164:19248" ph="UPDATE book " />
-            <marker date="1508410995000" expanded="true" signature="21243:21295" ph="SELECT * FRO... book" />
-            <marker date="1508410995000" expanded="true" signature="21243:21296" ph="SELECT * FRO... book" />
-            <marker date="1508410995000" expanded="true" signature="21522:21584" ph="SELECT * FRO... customer" />
-            <marker date="1508410995000" expanded="true" signature="21522:21585" ph="SELECT * FRO... customer" />
-            <marker date="1508410995000" expanded="true" signature="21829:21873" ph="SELECT * FRO... cust_book" />
-            <marker date="1508410995000" expanded="true" signature="21829:21928" ph="SELECT * FRO... cust_book" />
+            <element signature="method#validateLoanedBook#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#validateAuthor#0;class#LibraryModel#0" expanded="false" />
+            <marker date="1508418319000" expanded="true" signature="1399:1691" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="1430:1691" ph="select isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="1770:1771" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="2753:3030" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="2753:3031" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="4094:4391" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="4094:4439" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="4094:4486" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="5852:6122" ph="SELECT autho... author" />
+            <marker date="1508418319000" expanded="true" signature="5877:6121" ph="select autho... author" />
+            <marker date="1508418319000" expanded="true" signature="5877:6122" ph="SELECT autho... author" />
+            <marker date="1508418319000" expanded="true" signature="5883:6121" ph="select autho... author" />
+            <marker date="1508418319000" expanded="true" signature="7498:7576" ph="SELECT autho... " />
+            <marker date="1508418319000" expanded="true" signature="7498:7613" ph="SELECT autho... author" />
+            <marker date="1508418319000" expanded="true" signature="8767:8960" ph="SELECT custo... customer" />
+            <marker date="1508418319000" expanded="true" signature="9354:9409" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="9354:9444" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="9354:9492" ph="SELECT isbn,... book" />
+            <marker date="1508418319000" expanded="true" signature="9354:9538" ph="SELECT custo... book" />
+            <marker date="1508418319000" expanded="true" signature="10353:10546" ph="SELECT custo... customer" />
+            <marker date="1508418319000" expanded="true" signature="12250:12340" ph="INSERT INTO cust_book" />
+            <marker date="1508418319000" expanded="true" signature="12370:12393" ph="SELECT title... " />
+            <marker date="1508418319000" expanded="true" signature="12370:12572" ph="SELECT title... cust_book" />
+            <marker date="1508418319000" expanded="true" signature="12604:12637" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="12604:12648" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="15930:15985" ph="DELETE FROM " />
+            <marker date="1508418319000" expanded="true" signature="18296:18337" ph="DELETE FROM " />
+            <marker date="1508418319000" expanded="true" signature="19356:19392" ph="DELETE FROM " />
+            <marker date="1508418319000" expanded="true" signature="21865:21949" ph="UPDATE book " />
+            <marker date="1508418319000" expanded="true" signature="23944:23996" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="23944:23997" ph="SELECT * FRO... book" />
+            <marker date="1508418319000" expanded="true" signature="24223:24285" ph="SELECT * FRO... customer" />
+            <marker date="1508418319000" expanded="true" signature="24223:24286" ph="SELECT * FRO... customer" />
+            <marker date="1508418319000" expanded="true" signature="24530:24574" ph="SELECT * FRO... cust_book" />
+            <marker date="1508418319000" expanded="true" signature="24530:24629" ph="SELECT * FRO... cust_book" />
+            <marker date="1508418319000" expanded="true" signature="24871:24910" ph="SELECT * FRO... author" />
           </folding>
         </state>
       </provider>
