@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fd0b769-7cb2-4412-a454-45e506094f4b" name="Default" comment="" />
+    <list default="true" id="3fd0b769-7cb2-4412-a454-45e506094f4b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LibraryModel.java" afterPath="$PROJECT_DIR$/src/LibraryModel.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -10,42 +13,59 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="LibraryModel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LibraryModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="281" column="51" lean-forward="false" selection-start-line="281" selection-start-column="51" selection-end-line="281" selection-end-column="51" />
+            <state relative-caret-position="-550">
+              <caret line="464" column="31" lean-forward="true" selection-start-line="464" selection-start-column="31" selection-end-line="464" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7198#7199#0" expanded="true" />
-                <element signature="e#7264#7265#0" expanded="true" />
-                <marker date="1508240247000" expanded="true" signature="1242:1470" ph="SELECT isbn,... book" />
-                <marker date="1508240247000" expanded="true" signature="1273:1470" ph="select isbn,... book" />
-                <marker date="1508240247000" expanded="true" signature="1549:1550" ph="SELECT * FRO... book" />
-                <marker date="1508240247000" expanded="true" signature="2683:2871" ph="SELECT isbn,... book" />
-                <marker date="1508240247000" expanded="true" signature="2683:2872" ph="SELECT isbn,... book" />
-                <marker date="1508240247000" expanded="true" signature="3928:4144" ph="SELECT isbn,... book" />
-                <marker date="1508240247000" expanded="true" signature="3928:4192" ph="SELECT isbn,... book" />
-                <marker date="1508240247000" expanded="true" signature="3928:4239" ph="SELECT isbn,... book" />
-                <marker date="1508240247000" expanded="true" signature="5541:5811" ph="SELECT autho... author" />
-                <marker date="1508240247000" expanded="true" signature="5566:5810" ph="select autho... author" />
-                <marker date="1508240247000" expanded="true" signature="5566:5811" ph="SELECT autho... author" />
-                <marker date="1508240247000" expanded="true" signature="5572:5810" ph="select autho... author" />
-                <marker date="1508240247000" expanded="true" signature="7432:7510" ph="SELECT autho... " />
-                <marker date="1508240247000" expanded="true" signature="7432:7547" ph="SELECT autho... author" />
-                <marker date="1508240247000" expanded="true" signature="8568:8715" ph="SELECT * FRO... customer" />
-                <marker date="1508240247000" expanded="true" signature="8568:8761" ph="SELECT * FRO... customer" />
-                <marker date="1508240247000" expanded="true" signature="8865:8974" ph="SELECT COUNT... " />
-                <marker date="1508240247000" expanded="true" signature="8865:9012" ph="SELECT COUNT... customerGROUP" />
-                <marker date="1508240247000" expanded="true" signature="8865:9058" ph="SELECT custo... customer" />
-                <marker date="1508240247000" expanded="true" signature="8865:9060" ph="SELECT custo... customer" />
-                <marker date="1508240247000" expanded="true" signature="10126:10181" ph="SELECT isbn,... book" />
-                <marker date="1508240247000" expanded="true" signature="10126:10216" ph="SELECT isbn,... book" />
-                <marker date="1508240247000" expanded="true" signature="10126:10264" ph="SELECT isbn,... book" />
-                <marker date="1508240247000" expanded="true" signature="10126:10310" ph="SELECT custo... book" />
+                <element signature="method#bookLookup#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#showCatalogue#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#showLoanedBooks#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#showAuthor#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#showAllAuthors#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#showCustomer#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#showAllCustomers#0;class#LibraryModel#0" expanded="false" />
+                <element signature="e#15302#15303#0" expanded="true" />
+                <element signature="e#15340#15341#0" expanded="true" />
+                <element signature="method#closeStatements#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#validateDate#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#hasItem#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#validateIsbn#0;class#LibraryModel#0" expanded="false" />
+                <element signature="method#validateCustomer#0;class#LibraryModel#0" expanded="false" />
+                <marker date="1508402929000" expanded="true" signature="1563:1791" ph="SELECT isbn,... book" />
+                <marker date="1508402929000" expanded="true" signature="1594:1791" ph="select isbn,... book" />
+                <marker date="1508402929000" expanded="true" signature="1870:1871" ph="SELECT * FRO... book" />
+                <marker date="1508402929000" expanded="true" signature="2870:3083" ph="SELECT isbn,... book" />
+                <marker date="1508402929000" expanded="true" signature="2870:3084" ph="SELECT isbn,... book" />
+                <marker date="1508402929000" expanded="true" signature="4145:4441" ph="SELECT isbn,... book" />
+                <marker date="1508402929000" expanded="true" signature="4145:4489" ph="SELECT isbn,... book" />
+                <marker date="1508402929000" expanded="true" signature="4145:4536" ph="SELECT isbn,... book" />
+                <marker date="1508402929000" expanded="true" signature="5902:6172" ph="SELECT autho... author" />
+                <marker date="1508402929000" expanded="true" signature="5927:6171" ph="select autho... author" />
+                <marker date="1508402929000" expanded="true" signature="5927:6172" ph="SELECT autho... author" />
+                <marker date="1508402929000" expanded="true" signature="5933:6171" ph="select autho... author" />
+                <marker date="1508402929000" expanded="true" signature="7548:7626" ph="SELECT autho... " />
+                <marker date="1508402929000" expanded="true" signature="7548:7663" ph="SELECT autho... author" />
+                <marker date="1508402929000" expanded="true" signature="8817:9010" ph="SELECT custo... customer" />
+                <marker date="1508402929000" expanded="true" signature="9404:9459" ph="SELECT isbn,... book" />
+                <marker date="1508402929000" expanded="true" signature="9404:9494" ph="SELECT isbn,... book" />
+                <marker date="1508402929000" expanded="true" signature="9404:9542" ph="SELECT isbn,... book" />
+                <marker date="1508402929000" expanded="true" signature="9404:9588" ph="SELECT custo... book" />
+                <marker date="1508402929000" expanded="true" signature="10396:10589" ph="SELECT custo... customer" />
+                <marker date="1508402929000" expanded="true" signature="11806:11896" ph="INSERT INTO cust_book" />
+                <marker date="1508402929000" expanded="true" signature="11926:11949" ph="SELECT title... " />
+                <marker date="1508402929000" expanded="true" signature="11926:12128" ph="SELECT title... cust_book" />
+                <marker date="1508402929000" expanded="true" signature="12160:12193" ph="SELECT * FRO... book" />
+                <marker date="1508402929000" expanded="true" signature="15485:15540" ph="DELETE FROM " />
+                <marker date="1508402929000" expanded="true" signature="18299:18383" ph="UPDATE book " />
+                <marker date="1508402929000" expanded="true" signature="20379:20431" ph="SELECT * FRO... book" />
+                <marker date="1508402929000" expanded="true" signature="20379:20432" ph="SELECT * FRO... book" />
+                <marker date="1508402929000" expanded="true" signature="20658:20720" ph="SELECT * FRO... customer" />
+                <marker date="1508402929000" expanded="true" signature="20658:20721" ph="SELECT * FRO... customer" />
               </folding>
             </state>
           </provider>
@@ -54,8 +74,8 @@
       <file leaf-file-name="LibraryUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LibraryUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="400" column="0" lean-forward="false" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
+            <state relative-caret-position="171">
+              <caret line="270" column="12" lean-forward="false" selection-start-line="270" selection-start-column="4" selection-end-line="270" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -67,7 +87,11 @@
     <findStrings>
       <find>model</find>
       <find>showCatalogue</find>
+      <find>calendar</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -87,7 +111,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -107,71 +131,16 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LibraryUI.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="FullScreen" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -194,7 +163,21 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.LibraryUI">
-    <configuration default="false" name="LibraryUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="LibraryModel" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="project2" />
+      <envs />
+    </configuration>
+    <configuration name="LibraryUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="LibraryUI" />
       <option name="VM_PARAMETERS" />
@@ -207,14 +190,103 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="project2" />
       <envs />
-      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -269,29 +341,6 @@
         <option name="SUPPORT_LIB_ENABLED" value="true" />
         <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -440,35 +489,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="launchBrowserUrl" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
@@ -531,49 +551,10 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -589,12 +570,14 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.LibraryUI" />
+      <item index="1" class="java.lang.String" itemvalue="Application.LibraryModel" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Application.LibraryUI" />
+        <item index="1" class="java.lang.String" itemvalue="Application.LibraryModel" />
       </list>
     </recent_temporary>
   </component>
@@ -609,55 +592,58 @@
       <option name="presentableId" value="Default" />
       <updated>1508197317330</updated>
       <workItem from="1508197321181" duration="17441000" />
+      <workItem from="1508370454303" duration="214000" />
+      <workItem from="1508370745740" duration="18709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17441000" />
+    <option name="totallyTimeSpent" value="36364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16015625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39866668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -666,6 +652,130 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/LibraryModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#bookLookup#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showCatalogue#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showLoanedBooks#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showAuthor#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showAllAuthors#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showCustomer#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showAllCustomers#0;class#LibraryModel#0" expanded="false" />
+            <element signature="e#15302#15303#0" expanded="true" />
+            <element signature="e#15340#15341#0" expanded="true" />
+            <element signature="method#closeStatements#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#validateDate#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#hasItem#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#validateIsbn#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#validateCustomer#0;class#LibraryModel#0" expanded="false" />
+            <marker date="1508402929000" expanded="true" signature="1563:1791" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="1594:1791" ph="select isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="1870:1871" ph="SELECT * FRO... book" />
+            <marker date="1508402929000" expanded="true" signature="2870:3083" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="2870:3084" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="4145:4441" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="4145:4489" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="4145:4536" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="5902:6172" ph="SELECT autho... author" />
+            <marker date="1508402929000" expanded="true" signature="5927:6171" ph="select autho... author" />
+            <marker date="1508402929000" expanded="true" signature="5927:6172" ph="SELECT autho... author" />
+            <marker date="1508402929000" expanded="true" signature="5933:6171" ph="select autho... author" />
+            <marker date="1508402929000" expanded="true" signature="7548:7626" ph="SELECT autho... " />
+            <marker date="1508402929000" expanded="true" signature="7548:7663" ph="SELECT autho... author" />
+            <marker date="1508402929000" expanded="true" signature="8817:9010" ph="SELECT custo... customer" />
+            <marker date="1508402929000" expanded="true" signature="9404:9459" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="9404:9494" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="9404:9542" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="9404:9588" ph="SELECT custo... book" />
+            <marker date="1508402929000" expanded="true" signature="10396:10589" ph="SELECT custo... customer" />
+            <marker date="1508402929000" expanded="true" signature="11806:11896" ph="INSERT INTO cust_book" />
+            <marker date="1508402929000" expanded="true" signature="11926:11949" ph="SELECT title... " />
+            <marker date="1508402929000" expanded="true" signature="11926:12128" ph="SELECT title... cust_book" />
+            <marker date="1508402929000" expanded="true" signature="12160:12193" ph="SELECT * FRO... book" />
+            <marker date="1508402929000" expanded="true" signature="15485:15540" ph="DELETE FROM " />
+            <marker date="1508402929000" expanded="true" signature="18299:18383" ph="UPDATE book " />
+            <marker date="1508402929000" expanded="true" signature="20379:20431" ph="SELECT * FRO... book" />
+            <marker date="1508402929000" expanded="true" signature="20379:20432" ph="SELECT * FRO... book" />
+            <marker date="1508402929000" expanded="true" signature="20658:20720" ph="SELECT * FRO... customer" />
+            <marker date="1508402929000" expanded="true" signature="20658:20721" ph="SELECT * FRO... customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LibraryUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6000">
+          <caret line="400" column="0" lean-forward="false" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LibraryModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#bookLookup#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showCatalogue#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showLoanedBooks#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showAuthor#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showAllAuthors#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showCustomer#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showAllCustomers#0;class#LibraryModel#0" expanded="false" />
+            <element signature="e#15302#15303#0" expanded="true" />
+            <element signature="e#15340#15341#0" expanded="true" />
+            <element signature="method#closeStatements#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#validateDate#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#hasItem#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#validateIsbn#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#validateCustomer#0;class#LibraryModel#0" expanded="false" />
+            <marker date="1508402929000" expanded="true" signature="1563:1791" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="1594:1791" ph="select isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="1870:1871" ph="SELECT * FRO... book" />
+            <marker date="1508402929000" expanded="true" signature="2870:3083" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="2870:3084" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="4145:4441" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="4145:4489" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="4145:4536" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="5902:6172" ph="SELECT autho... author" />
+            <marker date="1508402929000" expanded="true" signature="5927:6171" ph="select autho... author" />
+            <marker date="1508402929000" expanded="true" signature="5927:6172" ph="SELECT autho... author" />
+            <marker date="1508402929000" expanded="true" signature="5933:6171" ph="select autho... author" />
+            <marker date="1508402929000" expanded="true" signature="7548:7626" ph="SELECT autho... " />
+            <marker date="1508402929000" expanded="true" signature="7548:7663" ph="SELECT autho... author" />
+            <marker date="1508402929000" expanded="true" signature="8817:9010" ph="SELECT custo... customer" />
+            <marker date="1508402929000" expanded="true" signature="9404:9459" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="9404:9494" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="9404:9542" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="9404:9588" ph="SELECT custo... book" />
+            <marker date="1508402929000" expanded="true" signature="10396:10589" ph="SELECT custo... customer" />
+            <marker date="1508402929000" expanded="true" signature="11806:11896" ph="INSERT INTO cust_book" />
+            <marker date="1508402929000" expanded="true" signature="11926:11949" ph="SELECT title... " />
+            <marker date="1508402929000" expanded="true" signature="11926:12128" ph="SELECT title... cust_book" />
+            <marker date="1508402929000" expanded="true" signature="12160:12193" ph="SELECT * FRO... book" />
+            <marker date="1508402929000" expanded="true" signature="15485:15540" ph="DELETE FROM " />
+            <marker date="1508402929000" expanded="true" signature="18299:18383" ph="UPDATE book " />
+            <marker date="1508402929000" expanded="true" signature="20379:20431" ph="SELECT * FRO... book" />
+            <marker date="1508402929000" expanded="true" signature="20379:20432" ph="SELECT * FRO... book" />
+            <marker date="1508402929000" expanded="true" signature="20658:20720" ph="SELECT * FRO... customer" />
+            <marker date="1508402929000" expanded="true" signature="20658:20721" ph="SELECT * FRO... customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LibraryUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6000">
+          <caret line="400" column="0" lean-forward="false" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -682,27 +792,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="94" column="8" lean-forward="false" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/postgresql94.jar!/org/postgresql/jdbc2/AbstractJdbc2Connection.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LibraryUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="400" column="0" lean-forward="false" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,50 +803,83 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LibraryUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="270" column="12" lean-forward="false" selection-start-line="270" selection-start-column="4" selection-end-line="270" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/postgresql94.jar!/org/postgresql/jdbc2/AbstractJdbc2ResultSet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="1313" column="0" lean-forward="false" selection-start-line="1313" selection-start-column="0" selection-end-line="1313" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="1304" column="0" lean-forward="false" selection-start-line="1304" selection-start-column="0" selection-end-line="1304" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="94" column="8" lean-forward="false" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LibraryModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="281" column="51" lean-forward="false" selection-start-line="281" selection-start-column="51" selection-end-line="281" selection-end-column="51" />
+        <state relative-caret-position="-550">
+          <caret line="464" column="31" lean-forward="true" selection-start-line="464" selection-start-column="31" selection-end-line="464" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7198#7199#0" expanded="true" />
-            <element signature="e#7264#7265#0" expanded="true" />
-            <marker date="1508240247000" expanded="true" signature="1242:1470" ph="SELECT isbn,... book" />
-            <marker date="1508240247000" expanded="true" signature="1273:1470" ph="select isbn,... book" />
-            <marker date="1508240247000" expanded="true" signature="1549:1550" ph="SELECT * FRO... book" />
-            <marker date="1508240247000" expanded="true" signature="2683:2871" ph="SELECT isbn,... book" />
-            <marker date="1508240247000" expanded="true" signature="2683:2872" ph="SELECT isbn,... book" />
-            <marker date="1508240247000" expanded="true" signature="3928:4144" ph="SELECT isbn,... book" />
-            <marker date="1508240247000" expanded="true" signature="3928:4192" ph="SELECT isbn,... book" />
-            <marker date="1508240247000" expanded="true" signature="3928:4239" ph="SELECT isbn,... book" />
-            <marker date="1508240247000" expanded="true" signature="5541:5811" ph="SELECT autho... author" />
-            <marker date="1508240247000" expanded="true" signature="5566:5810" ph="select autho... author" />
-            <marker date="1508240247000" expanded="true" signature="5566:5811" ph="SELECT autho... author" />
-            <marker date="1508240247000" expanded="true" signature="5572:5810" ph="select autho... author" />
-            <marker date="1508240247000" expanded="true" signature="7432:7510" ph="SELECT autho... " />
-            <marker date="1508240247000" expanded="true" signature="7432:7547" ph="SELECT autho... author" />
-            <marker date="1508240247000" expanded="true" signature="8568:8715" ph="SELECT * FRO... customer" />
-            <marker date="1508240247000" expanded="true" signature="8568:8761" ph="SELECT * FRO... customer" />
-            <marker date="1508240247000" expanded="true" signature="8865:8974" ph="SELECT COUNT... " />
-            <marker date="1508240247000" expanded="true" signature="8865:9012" ph="SELECT COUNT... customerGROUP" />
-            <marker date="1508240247000" expanded="true" signature="8865:9058" ph="SELECT custo... customer" />
-            <marker date="1508240247000" expanded="true" signature="8865:9060" ph="SELECT custo... customer" />
-            <marker date="1508240247000" expanded="true" signature="10126:10181" ph="SELECT isbn,... book" />
-            <marker date="1508240247000" expanded="true" signature="10126:10216" ph="SELECT isbn,... book" />
-            <marker date="1508240247000" expanded="true" signature="10126:10264" ph="SELECT isbn,... book" />
-            <marker date="1508240247000" expanded="true" signature="10126:10310" ph="SELECT custo... book" />
+            <element signature="method#bookLookup#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showCatalogue#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showLoanedBooks#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showAuthor#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showAllAuthors#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showCustomer#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#showAllCustomers#0;class#LibraryModel#0" expanded="false" />
+            <element signature="e#15302#15303#0" expanded="true" />
+            <element signature="e#15340#15341#0" expanded="true" />
+            <element signature="method#closeStatements#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#validateDate#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#hasItem#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#validateIsbn#0;class#LibraryModel#0" expanded="false" />
+            <element signature="method#validateCustomer#0;class#LibraryModel#0" expanded="false" />
+            <marker date="1508402929000" expanded="true" signature="1563:1791" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="1594:1791" ph="select isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="1870:1871" ph="SELECT * FRO... book" />
+            <marker date="1508402929000" expanded="true" signature="2870:3083" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="2870:3084" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="4145:4441" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="4145:4489" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="4145:4536" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="5902:6172" ph="SELECT autho... author" />
+            <marker date="1508402929000" expanded="true" signature="5927:6171" ph="select autho... author" />
+            <marker date="1508402929000" expanded="true" signature="5927:6172" ph="SELECT autho... author" />
+            <marker date="1508402929000" expanded="true" signature="5933:6171" ph="select autho... author" />
+            <marker date="1508402929000" expanded="true" signature="7548:7626" ph="SELECT autho... " />
+            <marker date="1508402929000" expanded="true" signature="7548:7663" ph="SELECT autho... author" />
+            <marker date="1508402929000" expanded="true" signature="8817:9010" ph="SELECT custo... customer" />
+            <marker date="1508402929000" expanded="true" signature="9404:9459" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="9404:9494" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="9404:9542" ph="SELECT isbn,... book" />
+            <marker date="1508402929000" expanded="true" signature="9404:9588" ph="SELECT custo... book" />
+            <marker date="1508402929000" expanded="true" signature="10396:10589" ph="SELECT custo... customer" />
+            <marker date="1508402929000" expanded="true" signature="11806:11896" ph="INSERT INTO cust_book" />
+            <marker date="1508402929000" expanded="true" signature="11926:11949" ph="SELECT title... " />
+            <marker date="1508402929000" expanded="true" signature="11926:12128" ph="SELECT title... cust_book" />
+            <marker date="1508402929000" expanded="true" signature="12160:12193" ph="SELECT * FRO... book" />
+            <marker date="1508402929000" expanded="true" signature="15485:15540" ph="DELETE FROM " />
+            <marker date="1508402929000" expanded="true" signature="18299:18383" ph="UPDATE book " />
+            <marker date="1508402929000" expanded="true" signature="20379:20431" ph="SELECT * FRO... book" />
+            <marker date="1508402929000" expanded="true" signature="20379:20432" ph="SELECT * FRO... book" />
+            <marker date="1508402929000" expanded="true" signature="20658:20720" ph="SELECT * FRO... customer" />
+            <marker date="1508402929000" expanded="true" signature="20658:20721" ph="SELECT * FRO... customer" />
           </folding>
         </state>
       </provider>
@@ -824,6 +950,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>postgresql94</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
