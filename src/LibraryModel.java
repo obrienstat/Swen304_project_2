@@ -50,7 +50,8 @@ public class LibraryModel {
         try {
 
             PreparedStatement ps = this.conn.prepareStatement("" +
-                    "SELECT isbn, title, edition_no, numofcop, numleft, surname " +
+                    "SELECT isbn, title, edition_no, numofcop, numleft, " +
+                    "   surname || ', ' || name as ful_name " +
                     "FROM book NATURAL JOIN book_author " +
                     "NATURAL JOIN author " +
                     "WHERE isbn = ?");
@@ -63,7 +64,7 @@ public class LibraryModel {
                 int edition = rs.getInt("edition_no");
                 int numCop = rs.getInt("numofcop");
                 int copLeft = rs.getInt("numleft");
-                String author = rs.getString("surname");
+                String author = rs.getString("full_name");
                 item = String.format("\t%d: %s\n" +
                         "\tEdition: %d - Number of copies: %d - Copies left: %d\n" +
                         "\tAuthor: %s", isbn, title, edition, numCop, copLeft, author);
@@ -83,7 +84,8 @@ public class LibraryModel {
         String catalogue = "";
         try {
             PreparedStatement ps = this.conn.prepareStatement("" +
-                    "SELECT isbn, title, edition_no, numofcop, numleft, surname " +
+                    "SELECT isbn, title, edition_no, numofcop, numleft, " +
+                    "   surname || ', ' name as full_name " +
                     "FROM book " +
                     "NATURAL JOIN book_author " +
                     "NATURAL JOIN author");
@@ -95,7 +97,7 @@ public class LibraryModel {
                 int edition = rs.getInt("edition_no");
                 int numCop = rs.getInt("numofcop");
                 int copLeft = rs.getInt("numleft");
-                String author = rs.getString("surname");
+                String author = rs.getString("full_name");
 
                 catalogue += String.format("%d: %s\n" +
                         "\tEdition: %d - Number of copies: %d - Copies left: %d\n" +
